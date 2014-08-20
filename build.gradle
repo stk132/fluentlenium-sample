@@ -1,6 +1,5 @@
 apply plugin: 'java'
 apply plugin: 'idea'
-apply plugin: 'groovy'
 
 sourceCompatibility = 1.7
 version = '1.0'
@@ -14,6 +13,4 @@ dependencies {
     testCompile 'org.assertj:assertj-core:1.6.0'
     testCompile 'com.github.detro.ghostdriver:phantomjsdriver:1.1.0'
     testCompile 'org.fluentlenium:fluentlenium-assertj:0.10.0'
-    testCompile 'org.spockframework:spock-core:0.7-groovy-2.0'
-    compile 'org.assertj:assertj-core:1.6.0'
 }
