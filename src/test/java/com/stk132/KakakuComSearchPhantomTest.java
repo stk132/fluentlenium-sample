@@ -28,7 +28,9 @@ public class KakakuComSearchPhantomTest extends FluentTest {
     @Test
     public void TOP画面から商品詳細画面に遷移できること () {
         page.go();
-        KakakuComKeywordSearchResultPage searchResultPage = page.inputKeyword("ipad").executeKeywordSearch();
+        KakakuComKeywordSearchResultPage searchResultPage = page
+                .inputKeyword("ipad")
+                .executeKeywordSearch();
         searchResultPage.goToFirstItemDetailPage();
         assertThat(title()).contains("価格比較");
     }

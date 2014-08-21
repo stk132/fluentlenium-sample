@@ -14,3 +14,7 @@ dependencies {
     testCompile 'com.github.detro.ghostdriver:phantomjsdriver:1.1.0'
     testCompile 'org.fluentlenium:fluentlenium-assertj:0.10.0'
 }
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.0'
+}

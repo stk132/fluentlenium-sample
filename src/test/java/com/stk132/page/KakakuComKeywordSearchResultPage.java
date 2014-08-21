@@ -18,10 +18,10 @@ public class KakakuComKeywordSearchResultPage extends FluentPage {
      * 検索結果一覧の最初の商品詳細ページに遷移する
      * @return
      */
-    public KakakuComKeywordSearchResultPage goToFirstItemDetailPage() {
+    public KakakuComItemDetailPage goToFirstItemDetailPage() {
         FluentWebElement itemDetailButton = findFirst(".iviewbtn");
         itemDetailButton.click();
-        return this;
+        return createPage(KakakuComItemDetailPage.class);
     }
 
     /**
